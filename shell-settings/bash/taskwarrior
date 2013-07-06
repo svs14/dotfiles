@@ -1,2 +1,4 @@
 # Add taskwarrior completion
-source /usr/share/doc/task/scripts/bash/task.sh
+if [ -f /usr/share/doc/task/scripts/bash/task.sh ]; then
+    source /usr/share/doc/task/scripts/bash/task.sh
+fi
