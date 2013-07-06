@@ -1,0 +1,2 @@
+# Add taskwarrior completion
+source /usr/share/doc/task/scripts/bash/task.sh

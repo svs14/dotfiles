@@ -1,0 +1,5 @@
+# General aliases for BASH
+#
+
+# Clear BASH history
+alias h='history -c && clear'

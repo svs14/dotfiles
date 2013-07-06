@@ -1,0 +1,17 @@
+# GCC calls
+#
+
+# Standard gcc
+function g () {
+    gcc -Wall -ansi -o $(basename "$@" .c) "$@"
+}
+
+# Quick gcc call
+function gq () {
+    gcc -o $(basename "$@" .c) "$@"
+}
+
+# Debug enabled gcc
+function gd () {
+    gcc -g -O0 -D DEBUG -Wall -ansi -o $(basename "$@" .c) "$@"
+}

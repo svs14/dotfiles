@@ -1,0 +1,64 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Vim configuration
+"
+" Makes use of 'facets', modules of vimrc code
+" that are stored in $ENV_CUSTOM_DIR/vim/facets/
+"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Critical Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Enable vim features
+set nocompatible
+
+" Hitting Q accidentally is infuriating. Disable that shit.
+nnoremap Q <nop>
+
+" Designate map leader key
+let mapleader = ","
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Facet Imports
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"
+" Imports facet by name
+"
+" Uses env var $ENV_CUSTOM_DIR as base
+" vim directory where facet is found of form
+" $ENV_CUSTOM_DIR + '/vim/facets/' + facet '.vim'
+" 
+function! ImportFacet(facet)
+
+    " Build facet filepath
+    let facet_file = fnameescape($ENV_CUSTOM_DIR.'/vim/facets/'.a:facet.'.vim')
+
+    " Source facet file
+    exec ":source " . facet_file
+
+endfunction
+
+" Set automatic file detection to off while Vundle plugins configure
+filetype off
+
+" Configure Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"" Enable Vundle
+Bundle 'gmarik/vundle'
+
+"" Import facets
+call ImportFacet('autocomplete')
+call ImportFacet('file_navigation')
+call ImportFacet('file_specific_behaviour')
+call ImportFacet('files')
+call ImportFacet('text_manipulation')
+call ImportFacet('devel_tools')
+call ImportFacet('visuals')
+
+" Enable detection of plugin filetype with indent files
+" NOTE: Required for finalising Vundle configuration
+filetype plugin indent on

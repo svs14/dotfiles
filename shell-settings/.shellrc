@@ -1,0 +1,16 @@
+#
+# Common shell rc
+#
+
+# Load common settings
+eval "$(find $ENV_CUSTOM_DIR/shell-settings \
+    -maxdepth 1 -type f ! -iname '.*' -print0 \
+    | xargs -0 -n 1 -r printf 'source %s\n')"
+
+# Find shell name, trim '-' and spaces
+shell_name=$(ps -p$$ -ocmd= | sed -e 's/^[ -]*//g')
+
+# Load shell-specific settings
+eval "$(find $ENV_CUSTOM_DIR/shell-settings/$shell_name \
+    -maxdepth 1 -type f ! -iname '.*' -print0 \
+    | xargs -0 -n 1 -r printf 'source %s\n')"

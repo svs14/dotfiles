@@ -1,0 +1,5 @@
+# General aliases for zsh
+#
+
+# Clear zsh history
+alias h=':> $HISTFILE && clear'
