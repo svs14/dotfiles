@@ -8,7 +8,7 @@ eval "$(find $ENV_CUSTOM_DIR/shell-settings \
     | xargs -0 -n 1 -r printf 'source %s\n')"
 
 # Find shell name, trim '-' and spaces
-shell_name=$(ps -p$$ -ocmd= | sed -e 's/^[ -]*//g')
+shell_name=$(ps -p$$ -ocomm= | sed -e 's/^[ -]*//g')
 
 # Load shell-specific settings
 eval "$(find $ENV_CUSTOM_DIR/shell-settings/$shell_name \

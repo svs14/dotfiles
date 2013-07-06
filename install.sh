@@ -87,8 +87,8 @@ if [ ! -d ~/.vim/bundle ]; then
     # Install vundle
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-    # Setup vundle in new shell (so it has updated changes)
-    ( vim +BundleInstall +qall )
+    # Setup vundle in new bash shell (so it has updated changes)
+    bash -ic 'vim +BundleInstall +qall'
 
 fi
 
