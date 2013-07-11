@@ -15,3 +15,6 @@ set noswapfile
 
 " Set our dictionary
 set dict=/usr/share/dict/words
+
+" Save files under sudo
+cmap w!! w !sudo tee > /dev/null %
