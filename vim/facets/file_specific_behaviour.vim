@@ -14,3 +14,7 @@ autocmd FileType haskell set ts=2
 autocmd FileType haskell set sw=2
 autocmd FileType ruby set ts=2
 autocmd FileType ruby set sw=2
+autocmd FileType xml set ts=2
+autocmd FileType xml set sw=2
+autocmd FileType html set ts=2
+autocmd FileType html set sw=2
