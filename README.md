@@ -58,4 +58,4 @@ common tasks such as installing rvm when developing in ruby
 
 ## License
 
-MIT License. See LICENSE.txt for more details.
+MIT License. See [LICENSE.txt](LICENSE.txt) for more details.
