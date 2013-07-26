@@ -38,3 +38,7 @@ set autoindent
 
 " Enable backspace over indentations, end-of-lines, start of inserts
 set backspace=indent,eol,start
+
+" Turn off physical line wrapping
+set textwidth=0
+set wrapmargin=0
