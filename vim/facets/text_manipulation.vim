@@ -23,9 +23,9 @@ Bundle 'Raimondi/delimitMate'
 " General Text Manipulation Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Have tabs default to 4 spaces
-set tabstop=4
-set shiftwidth=4
+" Have tabs default to 2 spaces
+set tabstop=2
+set shiftwidth=2
 
 " Make tabs become spaces
 set expandtab
