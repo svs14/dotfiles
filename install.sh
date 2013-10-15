@@ -92,6 +92,14 @@ if [ ! -d ~/.vim/bundle ]; then
 
 fi
 
+# If using YouCompleteMe vim plugin
+if [ ! -d ~/.vim/bundle/YouCompleteMe ]; then
+
+    # Compile YouCompleteMe
+    ( cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer )
+
+fi
+
 # Print completion message
 echo "Installation complete. Restart or source the rc of your shell to take
 effect."
