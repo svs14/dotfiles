@@ -9,6 +9,12 @@
 
 " Nice status line
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Solarized
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
@@ -21,7 +27,7 @@ Bundle 'Lokaltog/vim-powerline'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set background color
-set background=light
+set background=dark
 
 " Color column that goes beyond textwidth
 if exists('+colorcolumn')
