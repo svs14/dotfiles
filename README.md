@@ -10,7 +10,7 @@ The following must be installed:
 * bash
 * curl
 * git
-* vim
+* vim 7.3+
 
 ## Getting Started
 
