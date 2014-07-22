@@ -7,7 +7,7 @@ dotfiles and install scripts for use on \*unix machines.
 
 If you want to install and configure everything including dependencies, try these scripts:
 
-- [Ubuntu 12.04 LTS](https://gist.githubusercontent.com/svs14/5998032/raw/48db8c4164bc8b8093268ed4b3ef80fb9089222a/ubuntu-env_custom-bootstrap.sh)
+- [Ubuntu 12.04 LTS](https://gist.githubusercontent.com/svs14/5998032/raw/131897d1c43999de3397ec226c8a64f3c2c7956b/ubuntu-12.04-env_custom-bootstrap.sh)
 - [ArchLinux](https://gist.githubusercontent.com/svs14/8082569/raw/159a7a9e1f602ba0df6fd21910bc5e6ff8c46c9a/archlinux-env_custom-bootstrap.sh)
 
 ## Requirements
