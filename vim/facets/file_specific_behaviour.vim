@@ -28,3 +28,5 @@ autocmd FileType yaml set ts=2
 autocmd FileType yaml set sw=2
 autocmd FileType julia set ts=2
 autocmd FileType julia set sw=2
+autocmd FileType python set ts=4
+autocmd FileType python set sw=4
