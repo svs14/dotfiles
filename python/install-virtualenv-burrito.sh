@@ -3,4 +3,4 @@
 # Installs virtualenv via Virtualenv Burrito
 #
 
-curl -s https://raw.github.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh | $SHELL
+curl -sL https://raw.githubusercontent.com/brainsik/virtualenv-burrito/master/virtualenv-burrito.sh | $SHELL
