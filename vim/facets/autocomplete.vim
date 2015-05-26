@@ -12,6 +12,7 @@ Bundle 'Valloric/YouCompleteMe'
 
 " Snippets
 Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YouCompleteMe

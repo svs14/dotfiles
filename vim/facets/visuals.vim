@@ -28,7 +28,7 @@ Bundle 'altercation/vim-colors-solarized'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set background color
-set background=dark
+set background=light
 
 " Color column that goes beyond textwidth
 if exists('+colorcolumn')
