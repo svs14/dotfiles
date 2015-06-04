@@ -14,8 +14,7 @@ Bundle 'altercation/vim-colors-solarized'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NOTE(svs14): Remove comment if used.
-" colorscheme solarized
+silent! colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
@@ -28,7 +27,7 @@ Bundle 'altercation/vim-colors-solarized'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set background color
-set background=light
+set background=dark
 
 " Color column that goes beyond textwidth
 if exists('+colorcolumn')
